@@ -1,7 +1,6 @@
 import express from 'express';
 import { login,logout,onboard,signup } from '../controllers/auth.controller.js';
 import { protectRoute } from '../middleware/auth.middleware.js';
-import { buildWsSuccessAfterFailureInsight } from 'stream-chat';
 
 const router=express.Router();
 
